@@ -1,0 +1,77 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="map_panel(copy).js"></script>
+	<script type="text/javascript" src="data_template(copy).json"></script>
+	<link rel="stylesheet" type="text/css" href="dashBoard.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+	<title>Testing</title>
+</head>
+
+<body id="test">
+	<div class="navBar_container">
+		<h2>bjss</h2>
+		<nav class="navbar navbar-expand-sm bg-light navbar-light">
+
+			<!-- Links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Dashboard</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Devices</a>
+				</li>
+				<!-- Dropdown -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						Configuration
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Working on it</a>
+						<a class="dropdown-item" href="#">QR Code</a>
+						<a class="dropdown-item" href="#">Working on it</a>
+					</div>
+				</li>
+
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+						Location
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Bristol(Floor plan)</a>
+						<a class="dropdown-item" href="#">London</a>
+						<a class="dropdown-item" href="#">Manchester</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<br>
+	</div>
+
+	<!-- dashBoard content -->
+	<div class="dashBoard_container">
+		<div class="column_left">
+			<canvas id="canvas" width="1050" height="600"></canvas>
+			<div id="container"></div>
+			<div id="toollist"></div>
+		</div>
+		<div class="column_right">
+			<div class="dateSelector_box">
+				<p class="dateSelector_title">Please choose your time</p>
+				<div class="dateSelector">
+					<input id="selectDate" type="date" style="width:200px; height:30px;" defaultValue>
+					<button class="dateSelector_button">Confirm</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>

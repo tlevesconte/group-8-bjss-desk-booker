@@ -1,0 +1,79 @@
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="map_panel.js"></script>
+	<script type="text/javascript" src="data_template.json"></script>
+	<head>
+		<title>Testing</title>
+		<style>
+			#test{
+				display: flex;
+			}
+			.column_right{
+				width: calc(100% - 800px);
+				min-width: 300px;
+				display: flex;
+				justify-content:center;
+				flex-direction: column
+			}
+			.dateSelector_box{
+				margin-top: 0px;
+				height: 200px;
+				width: 200px;
+				padding: 10px;
+				border: 1px solid gray;
+				border-radius: 7px;
+				box-shadow:0 0 10px gray;
+			}
+			.dateSelector_title{
+				margin-left: 10px;
+				width: 200px;
+				font-size: 16px;
+			}
+			.dateSelector{
+				width: 200px;
+				text-align: center;
+			}
+			#selectDate{
+				display: block;
+				border: 2px solid gray;
+				border-radius: 5px;
+				height: 20px;
+			}
+			.dateSelector_button{
+				width: 150px;
+				height: 25px;
+				margin-top: 30px;
+				border: 1px solid gray;
+				border-radius: 7px;
+				background-color: #008000;
+				color: #ffffff;
+			}
+			.dateSelector_button:hover{
+				background-color:   #006400;
+				color: #ffffff;
+			}
+			.dateSelector_button:active{
+				border: 2px solid #8FBC8F;
+			}
+		</style>
+	</head>
+	<body id="test">
+		
+		<div class="column_left">
+			<canvas id ="canvas" width="1050" height="600"></canvas>
+			<div id="container"></div>
+			<div id="toollist"></div>
+			<div id="support"></div>
+		</div>
+		<div class="column_right">
+			<div class="dateSelector_box">
+				<p class="dateSelector_title">Please choose your time</p>
+				<div class="dateSelector">
+					<input id="selectDate" type="date" style="width:200px; height:30px;" defaultValue>
+					<button class="dateSelector_button">Confirm</button>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

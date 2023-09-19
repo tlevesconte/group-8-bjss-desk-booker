@@ -1,0 +1,12 @@
+body{
+    font-size: 14px;
+    color: blue;
+}
+.company-logo {
+    height: 60px;
+    width: auto;
+}
+.username {
+    text-transform: capitalize;
+    color: #0B5ED7;
+}

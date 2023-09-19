@@ -1,0 +1,72 @@
+body{
+    padding: 20px;
+}
+.navBar_container *{
+    padding: 10px;
+}
+.dashBoard_container{
+    display: flex;
+    padding: 0;
+}
+.column_right{
+    position: relative;
+    width: calc(100% - 800px);
+    min-width: 300px;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+.dateSelector_box{
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    box-shadow:0 0 10px gray;
+    box-sizing: content-box;
+}
+.dateSelector_title{
+    margin: 20px 0 0 5px;
+    width: 200px;
+    font-size: 16px;
+}
+.dateSelector{
+    position: relative;
+    top: 30px;
+    width: 200px;
+    text-align: center;
+}
+#selectDate{
+    display: block;
+    border: 2px solid gray;
+    border-radius: 5px;
+    height: 20px;
+}
+.dateSelector_button{
+    width: 150px;
+    height: 30px;
+    margin-top: 30px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    background-color: #008000;
+    color: #ffffff;
+}
+.dateSelector_button:hover{
+    background-color:   #006400;
+    color: #ffffff;
+}
+.dateSelector_button:active{
+    border: 2px solid #8FBC8F;
+}
+table{
+    margin: 0 auto;
+    min-width: 300px;
+}
+td{
+    padding-right: 50px;
+    min-width: 140px;
+}

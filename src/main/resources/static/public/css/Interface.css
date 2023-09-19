@@ -1,0 +1,97 @@
+
+* {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0px;
+}
+:root {
+  --black: #000000;
+  /* White */
+  --whitesmoke: #f1f1f1;
+  --white: #ffffff;
+    --mintcream: #f5fffa;
+  /* Gray */
+  --gray: #818181;
+  --gray99:#fcfcfc;
+  --lightslategray: #778899;
+  /* Red */
+  --red: #ff0000;
+  --indianred: #cd5c5c;
+  --lightcoral: #F08080;
+    /* Green */
+  --green: #008000;
+    --olive: #808000;
+    /* Blue */
+  --navy: #000080;
+  --blue: #4169E1;
+    /* Yellow */
+  --yellow: #ffc600;
+  --gold: #ffd700;
+
+}
+.line{
+    /* The dividing line: */
+    height:5px;
+    border-bottom:1px solid var(--blue);
+    margin:1em 0;
+    overflow:hidden;
+}
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 500px;
+}
+
+.left {
+  width: 65%;
+  color: var(--whitesmoke)
+}
+
+.right {
+  width: 35%;
+  color: var(--black)
+  top: 50%;
+  left: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.placeholder-box {
+  position: relative;
+  display: block;
+  top: 10px;
+  left: 50px;
+  width: 100%;
+  max-width: 300px;
+  min-height: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.25);
+}
+
+.placeholder-box p {
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+/* Button */
+
+button {
+ display: block;
+ border: solid white;
+ border-width: 0 10px;
+ border-radius: 20px;
+ background: green;
+ color: white;
+ font-size: 18px;
+ margin: -60px auto 15px;
+ padding: 15px;
+}

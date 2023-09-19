@@ -1,0 +1,15 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          auth0:
+            client-id: 5D4xjF4kUdHk8sIigk9BYZ37YcX3lHSL
+            client-secret: HPE9X1cM7L1boPvVim9OP4BZ6az0gMlm6AELBkNFLHHA5LIVN4RVALR6DJDfPlBa
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          auth0:
+            issuer-uri: https://dev-tomlv.eu.auth0.com/
